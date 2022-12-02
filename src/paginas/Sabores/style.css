@@ -1,0 +1,83 @@
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.secao-baner-sabor{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+   
+    background-image: url('/public/assets/banner-sabores.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.titulo-sabor{
+    text-align: center;
+    padding: 130px 90px;
+    
+}
+.titulo-sabor h1{
+    color: white;
+  font-size: 90px;
+  text-shadow: 3px 5px 2px #474747;
+}
+h2{
+    text-align: center;
+    padding: 5px;
+    font-size: 28px;
+}
+.container{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.sabores-card{
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow:2px 2px 15px 2px #d9dde1;
+}
+.sabores-card img{
+    width: auto;
+    height: 250px;
+    object-fit: contain;
+}
+.sabores-card p{
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.sabores-card h3{
+    text-align: center;
+    font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+    .titulo-sabor h1{
+        font-size: 70px;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sabores-card{
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 20px 40px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .titulo-sabor h1 {
+      font-size: 60px;
+    }
+  }

@@ -1,0 +1,34 @@
+header{
+    background-color: rgb(249, 219, 121);
+}
+.topo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+   
+}
+.topo img{
+    height: 60px;
+    width: auto;
+}
+.link-topo{
+    
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+@media screen and(max-width:662px){
+    header div{
+        flex-direction: column;
+    }
+    header nav{
+        border-top: 1px solid grey;
+        width: 100%;
+        justify-content: space-around;
+        padding-top: 10px;
+    }
+}
